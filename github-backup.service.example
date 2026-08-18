@@ -1,0 +1,15 @@
+[Unit]
+Description=Mirror all personal GitHub repositories
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/bin/github-backup -dir %h/github-backups -interval 12h
+EnvironmentFile=%h/.config/github-backup.env
+Restart=on-failure
+RestartSec=60
+UMask=0077
+
+[Install]
+WantedBy=default.target

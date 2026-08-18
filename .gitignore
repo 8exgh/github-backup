@@ -1,0 +1,10 @@
+# Local repository mirrors and credentials
+/backups/
+/.github-backup.env
+/.github-backup.service.local
+
+# Locally built executable
+/github-backup
+
+# IDE metadata
+/.idea/
