@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0d1117; color: #e6edf3; font: 15px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .window { width: 1440px; min-height: 900px; padding: 28px 34px 34px; }
+  .titlebar { display: flex; align-items: center; height: 42px; padding: 0 16px; background: #161b22; border: 1px solid #30363d; border-radius: 10px 10px 0 0; }
+  .dots { display: flex; gap: 8px; margin-right: 20px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+  .path { color: #8b949e; }
+  .content { padding: 24px; background: #010409; border: 1px solid #30363d; border-top: 0; border-radius: 0 0 10px 10px; }
+  .command { color: #7ee787; margin-bottom: 17px; }
+  .command span { color: #79c0ff; }
+  .summary { display: flex; gap: 34px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid #21262d; color: #8b949e; }
+  .summary strong { color: #f0f6fc; font-size: 18px; }
+  .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 7px 18px; }
+  .repo { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #c9d1d9; }
+  .repo::before { content: "◫"; color: #58a6ff; margin-right: 9px; }
+  .footer { margin-top: 23px; color: #8b949e; }
+  .cursor { display: inline-block; width: 8px; height: 17px; margin-left: 4px; vertical-align: -3px; background: #e6edf3; }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar"><div class="dots"><i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i></div><div class="path">~/8Examples/github-backup/backups/8exgh — local Git mirrors</div></div>
+  <div class="content">
+    <div class="command">sean@backup-pc <span>~/8Examples/github-backup</span> $ find backups/8exgh -maxdepth 1 -name '*.git' | sort</div>
+    <div class="summary"><div><strong>109</strong><br>repositories mirrored</div><div><strong>2.6 GB</strong><br>local Git backup</div><div><strong>Every 12 hours</strong><br>automatic discovery + fetch</div><div><strong>Bare mirrors</strong><br>all advertised Git refs</div></div>
+    <div class="grid">
+      <div class="repo">42backlinks.git</div><div class="repo">8examples.git</div><div class="repo">DealershipSpider.git</div><div class="repo">JobSpider.git</div>
+      <div class="repo">SemperAttentive.git</div><div class="repo">SmallWins.git</div><div class="repo">act2.git</div><div class="repo">alerts.git</div>
+      <div class="repo">alerttray.git</div><div class="repo">angular-reactive-stock-ticker.git</div><div class="repo">as9100-configuration-management.git</div><div class="repo">blazor_sqlserver_entity_framework.git</div>
+      <div class="repo">asus-rog-strix-backup-strategy.git</div><div class="repo">augment_context.git</div><div class="repo">backlink-spider.git</div><div class="repo">barcode.git</div>
+      <div class="repo">beeSimulator.git</div><div class="repo">bill.git</div><div class="repo">cargopax.git</div><div class="repo">cbt.git</div>
+      <div class="repo">code-review.git</div><div class="repo">container_registry.git</div><div class="repo">cqrs_workshop.git</div><div class="repo">cv.git</div>
+      <div class="repo">daycare.git</div><div class="repo">devops.git</div><div class="repo">diyseohub.git</div><div class="repo">finance_blog.git</div>
+      <div class="repo">fizzy-kanban.git</div><div class="repo">flappy_bird.git</div><div class="repo">flappynest_ios.git</div><div class="repo">github-backup.git</div>
+      <div class="repo">github_notifications.git</div><div class="repo">cypress-e2e-test-automation.git</div><div class="repo">gym_pass.git</div><div class="repo">hddusage.git</div>
+      <div class="repo">immutable-object.git</div><div class="repo">income_assistance.git</div><div class="repo">inventory-shopify.git</div><div class="repo">inventory.git</div>
+      <div class="repo">itres.git</div><div class="repo">journal.git</div><div class="repo">leetcode-practice.git</div><div class="repo">lux-first-website.git</div>
+      <div class="repo">lux-website2-tropical-fish.git</div><div class="repo">lux.git</div><div class="repo">lux_minecraft.git</div><div class="repo">math-queen.git</div>
+      <div class="repo">nail-salon.git</div><div class="repo">openclaw-8examples.git</div><div class="repo">openclaw-alexa-skill.git</div><div class="repo">openclaw-telemetry.git</div>
+      <div class="repo">openclaw-website-template.git</div><div class="repo">openclaw.git</div><div class="repo">oracle1.git</div><div class="repo">pc_setup.git</div>
+      <div class="repo">pearnel-website1.git</div><div class="repo">phone-call-gateway.git</div><div class="repo">photo-sharing.git</div><div class="repo">plan.git</div>
+      <div class="repo">polar_heart_rate.git</div><div class="repo">pomofast.git</div><div class="repo">pomozen.git</div><div class="repo">pos.git</div>
+      <div class="repo">pos_printer.git</div><div class="repo">sean-bennett-resume.git</div><div class="repo">seo.git</div><div class="repo">share_files.git</div>
+      <div class="repo">shipments.git</div><div class="repo">shipyard.git</div><div class="repo">simple-form-app.git</div><div class="repo">site_spider.git</div>
+      <div class="repo">spaceInvaders.git</div><div class="repo">sql-server-indexes.git</div><div class="repo">starter-sites.git</div><div class="repo">statusnest.git</div>
+      <div class="repo">streamline.git</div><div class="repo">stripe.git</div><div class="repo">sudoku.git</div><div class="repo">task_list_mono_repo.git</div>
+      <div class="repo">tetris.git</div><div class="repo">thread-starvation.git</div><div class="repo">thunderclient.git</div><div class="repo">walletpass_service.git</div>
+      <div class="repo">walletpass_service_opensource.git</div><div class="repo">wpm.git</div><div class="repo">zip.git</div><div class="repo">… 26 more mirrors</div>
+    </div>
+    <div class="footer">$ systemctl --user status github-backup.service&nbsp;&nbsp; <span style="color:#3fb950">● active (running)</span><span class="cursor"></span></div>
+  </div>
+</div>
+</body>
+</html>
